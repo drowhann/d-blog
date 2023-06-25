@@ -1,5 +1,5 @@
 <script setup>
-const { data, pending } = await useAsyncData('about', () => queryContent('/about').findOne())
+const { data } = await useAsyncData('about', () => queryContent('/about').findOne())
 </script>
 
 <template>
