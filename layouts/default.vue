@@ -6,7 +6,7 @@
       <NuxtLink to="/project">Projects</NuxtLink>
     </div>
   </nav>
-  <div class="px-10 py-4">
+  <div class="max-w-6xl m-auto px-10 py-4">
     <slot />
   </div>
 </template>

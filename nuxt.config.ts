@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       // Theme used in all color schemes.
-      theme: 'github-light',
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark',
+      },
       preload: ['diff', 'ts', 'js', 'css', 'java', 'groovy', 'sql', 'xml', 'json'],
     },
   },
