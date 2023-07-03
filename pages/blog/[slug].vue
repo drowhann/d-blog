@@ -1,6 +1,6 @@
 <script setup>
-const slug = useRoute().params.slug
-const { data: blog } = await useAsyncData(`blog-${slug}`, () => queryContent(`/blogs/${slug}`).findOne())
+const router = useRoute()
+const { data: blog } = await useAsyncData(`blog-${router.params.slug}`, () => queryContent(router.fullPath).findOne())
 </script>
 
 <template>
