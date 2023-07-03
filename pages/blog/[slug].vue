@@ -5,6 +5,6 @@ const { data: blog } = await useAsyncData(`blog-${slug}`, () => queryContent(`/b
 
 <template>
   <div>
-    <ContentRenderer :value="blog" />
+    <ContentRendererMarkdown :value="blog" />
   </div>
 </template>
