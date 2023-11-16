@@ -14,7 +14,8 @@
 
 
 <script setup lang="ts">
-useHead({
+useSeoMeta({
   titleTemplate: (title) => title?.trim() ? `${title} - Rohan Dhimal` : 'Rohan Dhimal',
+  ogImage: '/images/rohan.jpeg'
 })
 </script>
