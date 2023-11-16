@@ -1,6 +1,6 @@
 <template>
     <NuxtLink
-    class="text-blue-500 underline"
+    class="underline"
       :href="href"
       :target="target"
     >
