@@ -2516,7 +2516,7 @@ packages:
       postcss-normalize-timing-functions: 6.0.0(postcss@8.4.24)
       postcss-normalize-unicode: 6.0.0(postcss@8.4.24)
       postcss-normalize-url: 6.0.0(postcss@8.4.24)
-      postcss-normalize-whitespace: 6.0.0(postcss@8.4.24)
+      postcss-normalize-gray-100space: 6.0.0(postcss@8.4.24)
       postcss-ordered-values: 6.0.0(postcss@8.4.24)
       postcss-reduce-initial: 6.0.0(postcss@8.4.24)
       postcss-reduce-transforms: 6.0.0(postcss@8.4.24)
@@ -4293,7 +4293,7 @@ packages:
       micromark-factory-label: 1.1.0
       micromark-factory-space: 1.1.0
       micromark-factory-title: 1.1.0
-      micromark-factory-whitespace: 1.1.0
+      micromark-factory-gray-100space: 1.1.0
       micromark-util-character: 1.2.0
       micromark-util-chunked: 1.1.0
       micromark-util-classify-character: 1.1.0
@@ -4411,7 +4411,7 @@ packages:
       micromark-util-types: 1.1.0
     dev: true
 
-  /micromark-factory-whitespace@1.1.0:
+  /micromark-factory-gray-100space@1.1.0:
     resolution: {integrity: sha512-v2WlmiymVSp5oMg+1Q0N1Lxmt6pMhIHD457whWM7/GUlEks1hI9xj5w3zbc4uuMKXGisksZk8DzP2UyGbGqNsQ==}
     dependencies:
       micromark-factory-space: 1.1.0
@@ -5592,7 +5592,7 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-normalize-whitespace@6.0.0(postcss@8.4.24):
+  /postcss-normalize-gray-100space@6.0.0(postcss@8.4.24):
     resolution: {integrity: sha512-7cfE1AyLiK0+ZBG6FmLziJzqQCpTQY+8XjMhMAz8WSBSCsCNNUKujgIgjCAmDT3cJ+3zjTXFkoD15ZPsckArVw==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
@@ -5881,7 +5881,7 @@ packages:
       micromark: 3.2.0
       micromark-core-commonmark: 1.1.0
       micromark-factory-space: 1.1.0
-      micromark-factory-whitespace: 1.1.0
+      micromark-factory-gray-100space: 1.1.0
       micromark-util-character: 1.2.0
       parse-entities: 4.0.1
       scule: 1.0.0
