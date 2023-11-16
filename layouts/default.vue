@@ -50,3 +50,10 @@
     </div>
   </div>
 </template>
+
+
+<script setup lang="ts">
+useHead({
+  titleTemplate: (title) => title?.trim() ? `${title} - Rohan Dhimal` : 'Rohan Dhimal',
+})
+</script>
