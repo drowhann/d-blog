@@ -1,5 +1,5 @@
 <template>
-    <footer class="px-4 py-2 md:px-8 md:py-4">
+    <footer class="px-4 py-2">
         <section class="text-sm max-w-7xl mx-auto flex flex-col gap-4 items-center">
             <p>.</p>
             <p>&copy; {{ new Date().getFullYear() }} Rohan Dhimal <a
