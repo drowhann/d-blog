@@ -1,20 +1,22 @@
 <template>
   <div class="flex flex-col gap-4">
-    <ContentList path="/blog" v-slot="{ list: blogs }" >
-        <NuxtLink
-        class="p-2 border border-red bg-gray-900 text-gray-100 dark:text-gray-900 dark:bg-gray-100 "
-        :to="blog._path"
-        v-for="blog in blogs"
-      >
+    <ContentList path="/blog" v-slot="{ list: blogs }">
+      <NuxtLink class="p-2 border border-red bg-gray-900 text-gray-100 dark:text-gray-900 dark:bg-gray-100 "
+        :to="blog._path" v-for="blog in blogs">
         <h2 class="font-medium">{{ blog.title }}</h2>
       </NuxtLink>
-      
+
     </ContentList>
   </div>
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: 'Blogs'
+useSeoMeta({
+  title: 'Blogs',
+  twitterImage: '/images/rohan.jpeg',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Blogs - Rohan Dhimal',
+  twitterDescription: 'Rohan Dhimal is a full-stack developer and a tech enthusiast.',
+  ogUrl: 'https://rohandhimal.com.np/blog',
 })
 </script>

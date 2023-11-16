@@ -1,6 +1,7 @@
 ---
 title: ' '
 metaTitle: "About"
+ogTitle: "About"
 metaDesc: "About"
 date: "2021-10-26"
 author: "Rohan Dhimal"
