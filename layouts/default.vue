@@ -16,6 +16,6 @@
 <script setup lang="ts">
 useSeoMeta({
   titleTemplate: (title) => title?.trim() ? `${title} - Rohan Dhimal` : 'Rohan Dhimal',
-  ogImage: 'images/rohan.jpeg'
+  ogImage: '/images/rohan.jpeg'
 })
 </script>
