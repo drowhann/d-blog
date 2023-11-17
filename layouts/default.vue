@@ -22,6 +22,9 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterSite: '@rohandhimal9',
   twitterCreator: '@rohandhimal9',
+  twitterImage: '/images/rohan.jpeg',
+  twitterTitle: 'Rohan Dhimal',
+  twitterDescription: 'Rohan Dhimal - Software Engineer, Web Developer, and Open Source Enthusiast'
 })
 
 useHead({
