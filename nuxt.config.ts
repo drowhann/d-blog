@@ -11,4 +11,9 @@ export default defineNuxtConfig({
       preload: ['diff', 'ts', 'js', 'css', 'java', 'groovy', 'sql', 'xml', 'json'],
     },
   },
+  nitro:{
+    prerender:{
+      routes : ['/sitemap.xml']
+    }
+  }
 })

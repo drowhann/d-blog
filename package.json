@@ -8,11 +8,12 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/content": "npm:@nuxt/content-edge@latest"
+    "@nuxt/content": "npm:@nuxt/content-edge@latest",
+    "sitemap": "^7.1.1"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.15.12",
-    "nuxt": "^3.8.1",
-    "@nuxtjs/tailwindcss": "^6.8.0"
+    "nuxt": "^3.8.1"
   }
 }
