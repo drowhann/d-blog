@@ -1,5 +1,5 @@
 {
-  "private": true,  
+  "private": true,
   "packageManager": "pnpm@8.6.10",
   "scripts": {
     "build": "nuxt build",
@@ -7,10 +7,12 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
+  "dependencies": {
+    "@nuxt/content": "npm:@nuxt/content-edge@latest"
+  },
   "devDependencies": {
-    "@nuxt/content": "npm:@nuxt/content-edge@latest",
-    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.15.12",
-    "nuxt": "^3.5.2"
+    "nuxt": "^3.8.1",
+    "@nuxtjs/tailwindcss": "^6.8.0"
   }
 }
