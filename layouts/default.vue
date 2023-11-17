@@ -23,4 +23,10 @@ useSeoMeta({
   twitterSite: '@rohandhimal9',
   twitterCreator: '@rohandhimal9',
 })
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
 </script>
