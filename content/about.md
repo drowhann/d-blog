@@ -1,10 +1,8 @@
 ---
-title: ' '
-metaTitle: "About"
-ogTitle: "About"
-metaDesc: "About"
-date: "2021-10-26"
-author: "Rohan Dhimal"
+title: 'Rohan Dhimal'
+description: 'Rohan Dhimal - Full Stack Developer'
+url: 'https://rohandhimal.com.np'
+date: '2023-10-26'
 tags:
   - about
   - rohan

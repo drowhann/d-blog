@@ -15,13 +15,12 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  titleTemplate: (title) => title?.trim() ? `${title} - Rohan Dhimal` : 'Rohan Dhimal',
+  titleTemplate: (title) => title !== "Rohan Dhimal" ? `${title} - Rohan Dhimal` : title,
   ogImage: '/images/rohan.jpeg',
-  twitterImage: '/images/rohan.jpeg',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Rohan Dhimal',
-  twitterDescription: 'Rohan Dhimal is a full-stack developer and a tech enthusiast.',
   ogUrl: 'https://rohandhimal.com.np',
   ogTitle: 'Rohan Dhimal',
+  twitterCard: 'summary_large_image',
+  twitterSite: '@rohandhimal9',
+  twitterCreator: '@rohandhimal9',
 })
 </script>

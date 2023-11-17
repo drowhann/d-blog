@@ -13,10 +13,6 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Blogs',
-  twitterImage: '/images/rohan.jpeg',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Blogs - Rohan Dhimal',
-  twitterDescription: 'Rohan Dhimal is a full-stack developer and a tech enthusiast.',
   ogUrl: 'https://rohandhimal.com.np/blog',
 })
 </script>
