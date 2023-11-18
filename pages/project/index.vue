@@ -1,17 +1,18 @@
 <template>
   <div class="flex flex-col gap-4">
-    Will add soon :)
+    <ContentList path="/project" v-slot="{ list: projects }">
+      <NuxtLink class="p-2 border border-red bg-gray-900 text-gray-100 dark:text-gray-900 dark:bg-gray-100 "
+        :to="project._path" v-for="project in projects">
+        <h2 class="font-medium">{{ project.title }}</h2>
+      </NuxtLink>
+
+    </ContentList>
   </div>
 </template>
-  
 
 <script setup lang="ts">
 useSeoMeta({
   title: 'Projects',
-  twitterImage: '/images/rohan.jpeg',
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Projects - Rohan Dhimal',
-  twitterDescription: 'Rohan Dhimal is a full-stack developer and a tech enthusiast.',
   ogUrl: 'https://rohandhimal.com.np/project',
 })
 </script>

@@ -12,7 +12,11 @@ useSeoMeta({
 
 <template>
   <div>
-    <ContentDoc :path="router.fullPath" />
+    <ContentDoc :path="router.fullPath">
+      <template #not-found>
+        No blog found
+      </template>
+    </ContentDoc>
   </div>
 </template>
 
