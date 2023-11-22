@@ -15,6 +15,6 @@ tags:
 
 Hi, This is `Rohan Dhimal`.
 
-Currently working as a `Full Stack Developer` at [Awecode](https://www.awecode.com/).
+Currently working as a `Full Stack Developer` at [Awecode](https://www.awecode.com/){:target="_blank"}.
 
 Special love for `Open Source` and `Freelancing`.
