@@ -1,8 +1,14 @@
 <script setup>
 const router = useRoute()
 
-useSeoMeta({
-  ogUrl: `https://rohandhimal.com.np/project/${router.fullPath}`,
+const { data: project } = await useAsyncData('project', () => queryContent().where({
+  _path: { $eq: '/project/' + router.params.project }
+}).findOne())
+
+defineOgImageComponent('Nuxt', {
+  headline: 'Project - Rohan Dhimal',
+  title: project.value.title,
+  description: project.value.description,
 })
 </script>
 
@@ -15,5 +21,3 @@ useSeoMeta({
     </ContentDoc>
   </div>
 </template>
-
-

@@ -11,8 +11,9 @@
 </template>
 
 <script setup lang="ts">
-useSeoMeta({
+defineOgImageComponent('Nuxt', {
+  headline: 'Projects - Rohan Dhimal',
   title: 'Projects',
-  ogUrl: 'https://rohandhimal.com.np/project',
+  description: 'Projects by Rohan Dhimal.',
 })
 </script>
