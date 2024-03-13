@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-efineOgImageComponent('Nuxt', {
+defineOgImageComponent('Nuxt', {
   headline: 'Blogs - Rohan Dhimal',
   title: 'Blogs',
   description: 'Blogs by Rohan Dhimal.',
