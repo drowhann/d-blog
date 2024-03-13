@@ -2,8 +2,8 @@
   <div :class="$colormode.isDarkMode.value ? 'dark' : ''">
     <div class="bg-gray-100 dark:bg-gray-900  dark:text-gray-100 text-gray-900 min-h-[100vh]">
       <Navbar />
-      <section class="p-2">
-        <div class="max-w-7xl mx-auto">
+      <section class="px-2 py-4">
+        <div class="max-w-4xl mx-auto">
           <slot />
         </div>
       </section>

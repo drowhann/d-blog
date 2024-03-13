@@ -19,5 +19,3 @@ useSeoMeta({
     </ContentDoc>
   </div>
 </template>
-
-

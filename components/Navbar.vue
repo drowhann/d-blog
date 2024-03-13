@@ -1,5 +1,5 @@
 <template>
-    <nav class="p-2">
+    <nav class="py-2 px-4">
         <section class="flex justify-between items-center">
             <NuxtLink to="/" class="text-2xl font-bold">drowhann.</NuxtLink>
             <div class="flex gap-4 items-center">
