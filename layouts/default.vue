@@ -10,12 +10,10 @@
       <Footer />
     </div>
   </div>
-  <SpeedInsights />
 </template>
 
 
 <script setup lang="ts">
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 useSeoMeta({
   titleTemplate: (title) => title !== "Rohan Dhimal" ? `${title} - Rohan Dhimal` : title,
   ogImage: '/images/rohan.jpeg',
