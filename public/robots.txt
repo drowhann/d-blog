@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Content-signal metadata (non-standard; kept as a comment)
+# Content-signal: search=yes,ai-train=no
+
