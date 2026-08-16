@@ -35,5 +35,8 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ['/'],
     },
+    cloudflare: {
+      deployConfig: false,
+    },
   },
 })

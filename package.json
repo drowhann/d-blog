@@ -6,7 +6,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "nuxt build && wrangler --cwd .output deploy"
+    "deploy": "nuxt build && wrangler deploy"
   },
   "dependencies": {
     "@nuxt/content": "^3.15.2",
