@@ -1,5 +1,5 @@
 <template>
-  <pre><slot /></pre>
+  <pre class="mb-2"><slot /></pre>
 </template>
 
 <script setup lang="ts">

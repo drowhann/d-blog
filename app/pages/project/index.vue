@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: projects } = await useAsyncData('project-list', () =>
-  queryCollection('project').all()
+  queryCollection('project').order('date', 'DESC').all()
 )
 
 defineOgImage('OgDefault', {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: blogs } = await useAsyncData('blog-list', () =>
-  queryCollection('blog').all()
+  queryCollection('blog').order('date', 'DESC').all()
 )
 
 defineOgImage('OgDefault', {

@@ -1,5 +1,5 @@
 <template>
-  <h1 :id="id" class="text-2xl font-bold">
+  <h1 :id="id" class="text-2xl font-bold mb-2">
     <a v-if="id" :href="`#${id}`">
       <slot />
     </a>

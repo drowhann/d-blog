@@ -2,6 +2,16 @@
 const { data: about } = await useAsyncData('about', () =>
   queryCollection('pages').path('/about').first()
 )
+
+useHead({
+  title: 'Rohan Dhimal'
+})
+
+defineOgImage('OgDefault', {
+  headline: 'Home - Rohan Dhimal',
+  title: about.value?.title,
+  description: about.value?.description,
+})
 </script>
 
 <template>
