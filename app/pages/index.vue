@@ -1,6 +1,12 @@
+<script setup lang="ts">
+const { data: about } = await useAsyncData('about', () =>
+  queryCollection('pages').path('/about').first()
+)
+</script>
+
 <template>
   <div>
-    <ContentDoc path="/about" />
+    <ContentRenderer v-if="about" :value="about" />
     <section class="mt-4 flex flex-col gap-4">
       <div class=" text-center">
         .
@@ -38,5 +44,6 @@
             class="w-10 h-10 rounded-full object-contain" />
         </div>
       </div>
-  </section>
-</div></template>
+    </section>
+  </div>
+</template>

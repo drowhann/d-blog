@@ -1,4 +1,4 @@
-import { CookieRef } from '#app'
+import type { CookieRef } from '#app'
 
 const expires = new Date()
 expires.setTime(expires.getTime() + 365 * 24 * 60 * 60 * 1000)

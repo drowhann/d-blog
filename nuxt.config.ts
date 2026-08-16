@@ -1,14 +1,23 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/seo'],
+  compatibilityDate: '2026-08-16',
+  modules: ['@nuxt/content', '@nuxtjs/seo'],
+  css: ['~/assets/css/main.css'],
+  vite: {
+    plugins: [tailwindcss()],
+  },
   content: {
-    highlight: {
-      // Theme used in all color schemes.
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'github-light',
+            dark: 'github-dark',
+          },
+          langs: ['diff', 'ts', 'js', 'css', 'java', 'groovy', 'sql', 'xml', 'json', 'c', 'bash'],
+        },
       },
-      preload: ['diff', 'ts', 'js', 'css', 'java', 'groovy', 'sql', 'xml', 'json'],
     },
   },
   site: {
@@ -19,5 +28,12 @@ export default defineNuxtConfig({
   },
   schemaOrg: {
     identity: 'Person',
+  },
+  nitro: {
+    preset: 'cloudflare_module',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
   },
 })

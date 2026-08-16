@@ -1,44 +1,42 @@
 <template>
-  <slot />
+  <pre><slot /></pre>
 </template>
 
 <script setup lang="ts">
 defineProps({
   code: {
     type: String,
-    default: ''
+    default: '',
   },
   language: {
     type: String,
-    default: null
+    default: null,
   },
   filename: {
     type: String,
-    default: null
+    default: null,
   },
   highlights: {
     type: Array as () => number[],
-    default: () => []
+    default: () => [],
   },
   meta: {
     type: String,
-    default: null
-  }
+    default: null,
+  },
 })
 </script>
 
 <style>
+@reference "~/assets/css/main.css";
+
 pre code {
   display: block;
   overflow-x: auto;
   padding: 1rem;
-  background-color: #f6f8fa;
   font-size: 0.875rem;
   line-height: 1.5;
   tab-size: 2;
-}
-
-pre code{
-  @apply bg-gray-200 dark:bg-gray-800 ;
+  @apply bg-gray-200 dark:bg-gray-800;
 }
 </style>

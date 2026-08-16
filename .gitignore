@@ -4,5 +4,8 @@ node_modules
 .nitro
 .cache
 .output
+.wrangler
+.data
 .env
 dist
+.pnpm-store
